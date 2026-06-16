@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyaw Zin Htun | Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+    <nav class="navbar fixed-nav">
+        <div class="nav-container">
+            <div class="logo">KZH.Dev</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about-skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="hero" class="hero-section">
+        <div class="hero-container">
+            
+            <div class="hero-image-area">
+            <img src="image/profilePhoto.jpg" alt="Kyaw Zin Htun" class="profile-photo">
+            </div>
+
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Kyaw Zin Htun</span></h1>
+                <p class="role">Information Technology Student & Software Developer</p>
+                
+                <ul class="personal-info-list">
+                    <li>📧 Email: kyawzinhtun@email.com</li>
+                    <li>📍 Location: Yangon, Myanmar</li>
+                    <li>🔗 GitHub: github.com/SuperRico10</li>
+                </ul>
+
+                <p class="sub-text">Building clean, interactive web applications with Vanilla JS and robust database logic.</p>
+                <a href="#projects" class="cta-btn">View My Work</a>
+            </div>
+
+        </div>
+    </header>
+    <section id="about-skills" class="skills-section">
+        <div class="section-container">
+            <h2>About & Technical Skills</h2>
+            
+            <div class="tab-buttons">
+                <button class="tab-btn active" data-target="tech-stack">Tech Stack</button>
+                <button class="tab-btn" data-target="experience">Interests</button>
+            </div>
+
+            <div class="tab-contents">
+                <div id="tech-stack" class="content-box active">
+                    <h3>Core Technologies</h3>
+                    <p>ကျွန်တော် ဝဘ်ဆိုက်တွေနဲ့ စနစ်တွေ တည်ဆောက်တဲ့အခါ အောက်ပါ နည်းပညာတွေကို အဓိက အသုံးပြုပါတယ်ဗျာ။</p>
+                    <ul class="skills-list">
+                        <li><b>Frontend:</b> HTML5, CSS3 (Flexbox/Grid), Vanilla JavaScript</li>
+                        <li><b>Backend:</b> Python, PHP</li>
+                        <li><b>Database:</b> PostgreSQL, MySQL</li>
+                    </ul>
+                </div>
+
+                <div id="experience" class="content-box">
+                    <h3>Fields of Interest</h3>
+                    <p>နည်းပညာအသစ်တွေကို လေ့လာရတာ ဝါသနာပါပြီး အထူးသဖြင့် အောက်ပါ အပိုင်းတွေကို စိတ်ဝင်တစား ဇောက်ချ လုပ်ကိုင်နေပါတယ်ဗျာ။</p>
+                    <ul class="skills-list">
+                        <li>Enterprise Solutions (Odoo ERP Platform Customization)</li>
+                        <li>Machine Learning & AI Concepts (Data Analysis & Linear Regression)</li>
+                        <li>System Analysis & Architecture Design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="section-container">
+            <h2>My Lab Assignments & Projects</h2>
+            
+            <div class="sort-control">
+                <label for="sort-select">Sort by Date: </label>
+                <select id="sort-select">
+                    <option value="none">Default</option>
+                    <option value="asc">Oldest First</option>
+                    <option value="desc">Newest First</option>
+                </select>
+            </div>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Project / Lab Title</th>
+                        <th>Date Completed</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    </tbody>
+            </table>
+        </div>
+    </section>
+    <section id="teamwork-gallery" class="gallery-section">
+        <div class="section-container">
+            <h2>👥 Teamwork & Factory Observations</h2>
+            <p class="section-desc">အဖွဲ့အစည်းနဲ့အတူ ပူးပေါင်းဆောင်ရွက်ခဲ့တဲ့ လုပ်ငန်းခွင် မှတ်တမ်းဓာတ်ပုံများ</p>
+            
+         <div class="slideshow-container">
+                
+                <div class="my-slide fade">
+                    <img src="factory-visit.jpg" alt="Factory Observation" onerror="this.src='https://placehold.co/800x450?text=Factory+Observation+Photo'">
+                    <div class="slide-label">
+                        <h4>👥 Factory Observation</h4>
+                        <p>Hatchery & Fish Feed Mill Workflow Analysis</p>
+                    </div>
+                </div>
+
+                <div class="my-slide fade">
+                    <img src="network-install.jpg" alt="Network Infrastructure" onerror="this.src='https://placehold.co/800x450?text=Network+Installation+Photo'">
+                    <div class="slide-label">
+                        <h4>🔌 Infrastructure Setup</h4>
+                        <p>Cross-Functional Network Cable & Hardware Installation</p>
+                    </div>
+                </div>
+                <div class="my-slide fade">
+                    <img src="factory-visit.jpg" alt="Factory Observation" onerror="this.src='https://placehold.co/800x450?text=Factory+Observation+Photo'">
+                    <div class="slide-label">
+                        <h4>👥 2Factory Observation</h4>
+                        <p>Hatchery & Fish Feed Mill Workflow Analysis</p>
+                    </div>
+                </div>
+
+                <div class="my-slide fade">
+                    <img src="network-install.jpg" alt="Network Infrastructure" onerror="this.src='https://placehold.co/800x450?text=Network+Installation+Photo'">
+                    <div class="slide-label">
+                        <h4>🔌 2Infrastructure Setup</h4>
+                        <p>Cross-Functional Network Cable & Hardware Installation</p>
+                    </div>
+                </div>
+                <div class="my-slide fade">
+                    <img src="factory-visit.jpg" alt="Factory Observation" onerror="this.src='https://placehold.co/800x450?text=Factory+Observation+Photo'">
+                    <div class="slide-label">
+                        <h4>👥 3Factory Observation</h4>
+                        <p>Hatchery & Fish Feed Mill Workflow Analysis</p>
+                    </div>
+                </div>
+
+                <div class="my-slide fade">
+                    <img src="network-install.jpg" alt="Network Infrastructure" onerror="this.src='https://placehold.co/800x450?text=Network+Installation+Photo'">
+                    <div class="slide-label">
+                        <h4>🔌 3Infrastructure Setup</h4>
+                        <p>Cross-Functional Network Cable & Hardware Installation</p>
+                    </div>
+                </div>
+
+                <button class="prev-btn" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next-btn" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+
+            <div class="dots-area">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+        </div>
+    </section>
+
+    <div id="toast-alert" class="toast-box">
+        <span class="toast-icon">🚀</span>
+        <span class="toast-message">Welcome to my portfolio! Log updated.</span>
+    </div>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
