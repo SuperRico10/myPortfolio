@@ -49,11 +49,11 @@ sortSelect.addEventListener('change', (e) => {
     if (value === 'asc') {
         // အဟောင်းဆုံးရက်မှ အသစ်ဆုံးသို့ (Oldest First)
         sortedData.sort((a, b) => new Date(a.date) - new Date(b.date));
-        showToast("Sorted by Oldest First 📅");
+        //showToast("Sorted by Oldest First 📅");
     } else if (value === 'desc') {
         // အသစ်ဆုံးရက်မှ အဟောင်းဆုံးသို့ (Newest First)
         sortedData.sort((a, b) => new Date(b.date) - new Date(a.date));
-        showToast("Sorted by Newest First 🚀");
+        //("Sorted by Newest First 🚀");
     }
 
     renderProjects(sortedData); // စီပြီးသားဒေတာဖြင့် UI ကို ပြန်ဆွဲခြင်း
@@ -108,7 +108,7 @@ function initToastTriggers() {
     document.querySelectorAll('.toast-trigger').forEach(btn => {
         btn.addEventListener('click', (e) => {
             const msg = e.target.getAttribute('data-msg');
-            showToast(msg);
+            //showToast(msg);
         });
     });
 }
